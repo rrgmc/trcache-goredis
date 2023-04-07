@@ -24,7 +24,7 @@ git-status:
 	fi
 
 .PHONY: gittag
-gittag:
+gittag: git-status
 	test -n "$(TAG)"  # $$TAG
 	git commit -a -m "Release $(TAG)"
 	git tag $(TAG)
