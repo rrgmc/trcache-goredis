@@ -3,7 +3,7 @@ module github.com/RangelReale/trcache-goredis
 go 1.19
 
 require (
-	github.com/RangelReale/trcache v0.8.0
+	github.com/RangelReale/trcache v0.8.3
 	github.com/RangelReale/trcache/mocks v0.8.0
 	github.com/go-redis/redismock/v9 v9.0.2
 	github.com/redis/go-redis/v9 v9.0.2
