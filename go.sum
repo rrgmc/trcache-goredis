@@ -1,7 +1,7 @@
-github.com/RangelReale/trcache v0.8.3 h1:8GC+7h/odlFySgUguLqlqk/fvYpdt6M4WeH1rFasRU4=
-github.com/RangelReale/trcache v0.8.3/go.mod h1:Xxc+cZbp6JjELRi7Q+Hy1mlhHdpVkJJin1y/mQu/9dg=
-github.com/RangelReale/trcache/mocks v0.8.0 h1:xFz6qfyHIxHw9cVlsZq2zU/ZqHuFzFer+hhiQ4jdjQs=
-github.com/RangelReale/trcache/mocks v0.8.0/go.mod h1:jOCWaLI1UacmPIhXRT6PGBp8e72P0RZvSPLbq77d1ag=
+github.com/RangelReale/trcache v0.9.0 h1:kUuvyEzdAcr6vN3yIOhOLrjlY2lZmpdg63hthgL64B4=
+github.com/RangelReale/trcache v0.9.0/go.mod h1:Xxc+cZbp6JjELRi7Q+Hy1mlhHdpVkJJin1y/mQu/9dg=
+github.com/RangelReale/trcache/mocks v0.9.0 h1:5fPo3F7IN7MLejAqxLHYkujv0M0MiW9nNo8v+gSTgIU=
+github.com/RangelReale/trcache/mocks v0.9.0/go.mod h1:cVV5+fvFSVOGab9vUuVAgTPHPgV3qtvBPf/iZfrstwg=
 github.com/bsm/ginkgo/v2 v2.5.0 h1:aOAnND1T40wEdAtkGSkvSICWeQ8L3UASX7YVCqQx+eQ=
 github.com/bsm/gomega v1.20.0 h1:JhAwLmtRzXFTx2AkALSLa8ijZafntmhSoU63Ok18Uq8=
 github.com/cespare/xxhash/v2 v2.2.0 h1:DC2CZ1Ep5Y4k3ZQ899DldepgrayRUGE6BBZ/cd9Cj44=

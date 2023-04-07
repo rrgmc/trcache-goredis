@@ -8,15 +8,15 @@ import (
 	"github.com/redis/go-redis/v9"
 )
 
-type RefreshCache[K comparable, V any, RD any] struct {
+type RefreshCache[K comparable, V any] struct {
 	*Cache[K, V]
-	helper *refresh.Helper[K, V, RD]
+	helper *refresh.Helper[K, V]
 }
 
-var _ trcache.RefreshCache[string, string, string] = &RefreshCache[string, string, string]{}
+var _ trcache.RefreshCache[string, string] = &RefreshCache[string, string]{}
 
-func NewRefresh[K comparable, V any, RD any](redis *redis.Client,
-	options ...trcache.RootOption) (*RefreshCache[K, V, RD], error) {
+func NewRefresh[K comparable, V any](redis *redis.Client,
+	options ...trcache.RootOption) (*RefreshCache[K, V], error) {
 	checker := trcache.NewOptionChecker(options)
 
 	c, err := New[K, V](redis, trcache.ForwardOptionsChecker(checker)...)
@@ -24,7 +24,7 @@ func NewRefresh[K comparable, V any, RD any](redis *redis.Client,
 		return nil, err
 	}
 
-	helper, err := refresh.NewHelper[K, V, RD](trcache.ForwardOptionsChecker(checker)...)
+	helper, err := refresh.NewHelper[K, V](trcache.ForwardOptionsChecker(checker)...)
 	if err != nil {
 		return nil, err
 	}
@@ -33,13 +33,13 @@ func NewRefresh[K comparable, V any, RD any](redis *redis.Client,
 		return nil, err
 	}
 
-	ret := &RefreshCache[K, V, RD]{
+	ret := &RefreshCache[K, V]{
 		Cache:  c,
 		helper: helper,
 	}
 	return ret, nil
 }
 
-func (c *RefreshCache[K, V, RD]) GetOrRefresh(ctx context.Context, key K, options ...trcache.RefreshOption) (V, error) {
+func (c *RefreshCache[K, V]) GetOrRefresh(ctx context.Context, key K, options ...trcache.RefreshOption) (V, error) {
 	return c.helper.GetOrRefresh(ctx, c, key, options...)
 }
