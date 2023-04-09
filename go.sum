@@ -1,5 +1,5 @@
-github.com/RangelReale/trcache v0.11.0 h1:xQKk+VBE79Hi3KMKL6vAOCdolaYLHELhE0SL/idAVhM=
-github.com/RangelReale/trcache v0.11.0/go.mod h1:vg/U587hrrIn7ZxsPiI3kVBGKCw9b/q7qeGkpKmyEGc=
+github.com/RangelReale/trcache v0.12.0 h1:Dvp7uQgBY+BjG2QC9YSRZ94ApETCUgyzrGNxatj7LKE=
+github.com/RangelReale/trcache v0.12.0/go.mod h1:vg/U587hrrIn7ZxsPiI3kVBGKCw9b/q7qeGkpKmyEGc=
 github.com/bsm/ginkgo/v2 v2.5.0 h1:aOAnND1T40wEdAtkGSkvSICWeQ8L3UASX7YVCqQx+eQ=
 github.com/bsm/gomega v1.20.0 h1:JhAwLmtRzXFTx2AkALSLa8ijZafntmhSoU63Ok18Uq8=
 github.com/cespare/xxhash/v2 v2.2.0 h1:DC2CZ1Ep5Y4k3ZQ899DldepgrayRUGE6BBZ/cd9Cj44=
