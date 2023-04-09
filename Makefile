@@ -13,7 +13,7 @@ test:
 .PHONY: update-dep-version
 update-dep-version:
 	test -n "$(TAG)"  # $$TAG
-	sh -c 'go get github.com/RangelReale/trcache@$(TAG); go get github.com/RangelReale/trcache/mocks@$(TAG); go mod tidy'
+	sh -c 'go get github.com/RangelReale/trcache@$(TAG); go mod tidy'
 
 git-status:
 	@status=$$(git status --porcelain); \
