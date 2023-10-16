@@ -5,8 +5,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/RangelReale/trcache"
 	"github.com/redis/go-redis/v9"
+	"github.com/rrgmc/trcache"
 )
 
 type RedisGetFunc[K comparable, V any] interface {

@@ -1,6 +1,6 @@
 .PHONY: tools
 tools:
-	go install github.com/RangelReale/trcache/cmd/troptgen
+	go install github.com/rrgmc/trcache/cmd/troptgen
 
 .PHONY: gen
 gen: tools
@@ -13,7 +13,7 @@ test:
 .PHONY: update-dep-version
 update-dep-version:
 	test -n "$(TAG)"  # $$TAG
-	sh -c 'go get github.com/RangelReale/trcache@$(TAG); go mod tidy'
+	sh -c 'go get github.com/rrgmc/trcache@$(TAG); go mod tidy'
 
 git-status:
 	@status=$$(git status --porcelain); \

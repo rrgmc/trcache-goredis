@@ -3,9 +3,9 @@ package trredis
 import (
 	"context"
 
-	"github.com/RangelReale/trcache"
-	"github.com/RangelReale/trcache/refresh"
 	"github.com/redis/go-redis/v9"
+	"github.com/rrgmc/trcache"
+	"github.com/rrgmc/trcache/refresh"
 )
 
 type RefreshCache[K comparable, V any] struct {

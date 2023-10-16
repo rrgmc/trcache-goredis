@@ -1,6 +1,6 @@
-# trcache go-redis [![GoDoc](https://godoc.org/github.com/RangelReale/trcache-goredis?status.png)](https://godoc.org/github.com/RangelReale/trcache-goredis)
+# trcache go-redis [![GoDoc](https://godoc.org/github.com/rrgmc/trcache-goredis?status.png)](https://godoc.org/github.com/rrgmc/trcache-goredis)
 
-This is a [trcache](https://github.com/RangelReale/trcache) wrapper for [go-redis](https://github.com/redis/go-redis).
+This is a [trcache](https://github.com/rrgmc/trcache) wrapper for [go-redis](https://github.com/redis/go-redis).
 
 ## Info
 
@@ -23,5 +23,5 @@ This is a [trcache](https://github.com/RangelReale/trcache) wrapper for [go-redi
 ## Installation
 
 ```shell
-go get github.com/RangelReale/trcache-goredis
+go get github.com/rrgmc/trcache-goredis
 ```
