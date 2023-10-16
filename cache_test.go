@@ -91,7 +91,7 @@ func TestCacheCodecError(t *testing.T) {
 	mockRedis.ExpectGet("a").RedisNil()
 
 	mockCodec.EXPECT().
-		Marshal(mock.Anything, "12").
+		Encode(mock.Anything, "12").
 		Return(nil, errors.New("my error"))
 
 	c, err := New[string, string](redis,
